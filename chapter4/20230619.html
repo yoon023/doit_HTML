@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body> 
+    
+    <h4> form태그자체는 gui적인 특징없음. 이동할페이지에 전달하고자하는 데이터의 묶음을 처리함.
+    <br>자식태그로 input또는 select같은 태그들이 존재해야 의미가 있음.</h4>
+
+    <form>
+
+    </form action="">
+    <form>
+        <input type="text"> 
+    </form>
+    <form>
+        <input type="text"> 
+    </form>
+    <hr>
+    
+    <header>
+        주로 log title 상단메뉴
+        <nav>상단메뉴 또는 사이드 메뉴</nav>
+    </header>
+    <div id="wrap_content">
+        <section>
+            <nav>상단메뉴 또는 사이드 메뉴</nav>
+            <article>
+                주요상품목록
+            </article>
+            <article>
+                테마별상품목록
+            </article>
+        </section>
+        <aside>사이드배너광고 또는 바로가기링크</aside>
+    </div>
+    
+    <footer>
+        <nav>상단메뉴 또는 사이드 메뉴</nav>
+        연락처, 
+    </footer>
+    
+
+    <div> <iframe width="560" height="315" src="https://www.youtube.com/embed/XMipmINnMwI" 
+        title="YouTube video player" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+         allowfullscreen></iframe>
+    </div>
+    <div> <iframe width="560" height="315" src="https://www.youtube.com/embed/XMipmINnMwI" 
+        title="YouTube video player" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+         allowfullscreen></iframe>
+    </div>
+    <div><iframe src="br.html" width="500" height="500"> iframe innertext는 작성이 되지 않음. </iframe></div>
+    <div>모든 태그에 id 속성 지정 가능함. 
+        id 속성값은 페이지내 unique한 값이 들어가야함.</div>
+    <span id="p0">말도안되는 태그 사용</span>
+    <p>html의 내용을 담는 패러그래프 한 단락을 담음.</p>
+    <hr id="p1">
+    <img id="p2"  src="./resources/images/image.jpg">닫히는 태그 없는 태그
+    <img id="p3"width= "200 " height="100" src="./resources/images/tree.png" alt="이미지파일이손상되거나 경로가 맞지 않을 때 나타내는 문구">
+    <hr>
+    <img width="1300" height= "100" src="./resources/images/1801287.svg" > svg는 가로세로 비율 유지하도록 코딩되어있으면 유지됨
+    <hr>
+    <a href="./br.html" target="_blank"> InnerText 또는 InnerHTML 꼭 작성해야함</a>
+    <hr>
+    <a href="./br.html">InnerHTML <img src="./resources/images/image.jpg" width="50" alt="InnerHTML"</a>
+    <hr>
+    <a href="#p2"> 페이지 내부 이동 _InnerText 또는 InnerHTML</a>
+    <hr>
+    <a href="#p3">
+        <h1>
+        <img width="300" height="100" src="./resources/images/image.jpg">
+         <span>페이지 내부 이동 _InnerText 또는 InnerHTML</span>
+        </h1>
+    </a>
+</body>
+</html>
