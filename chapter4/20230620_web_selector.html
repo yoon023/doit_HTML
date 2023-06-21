@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>선택자</title>
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">-->
     <link href="./resources/css/reset.css" rel="stylesheet">
+
     <style>
+      @font-face {
+          font-family: 'Ostrich';
+          src: 
+               local('Ostrich Sans'),      
+               url('resources/fonts/ostrich-sans-bold.ttf') format('truetype'),
+               url('resources/fonts/ostrich-sans-bold.woff') format('woff');
+            }
+       div{
+            /*
+            font-family: 'Ostrich' , '함초롱바탕','Times New Roman', Times, serif;
+            font-size: 28pt;
+            font-weight: bolder;
+            font-variant: small-caps;
+            font-style: italic;
+            */
+            font : 2em  'Orbit' ,'Ostrich' , '함초롱바탕','Times New Roman', Times, serif ;
+            line-height: 50px;
+            text-shadow: #ddd 5 5 10px;
+         }
         /*CSS문법
         첫번째 P태그에 background yellow, 글자색은 green
         두번째 p태그에 background red, 글자색은 blue 
@@ -74,14 +97,50 @@
         div .ca.cb.cc{ background-color: red; color: yellow;}
         div .cb{ background-color: gray; color: black}
         */
-        p.ca.cc{ background-color: yellow; color: green;}
-        p.ca.cb.cc{ background-color: red; color: yellow;}
+        p.ca.cc{ 
+                /*
+            border-width: 5px 10px 5px 2px;
+            border-color: black red blue greenyellow;
+            border-style: solid dashed dotted solid;
+            
+            
+            border-top: 5px dashed black;
+            border-left: 1px solid red;
+            border-right: 10px dotted blue;
+            border-bottom: 5px solid black;
+            
+
+            border-width: 5px 10px ;
+            border-color: black red ;
+            border-style: solid dashed ;
+            */
+            border-width: 5px 10px  2px;
+            border-color: black red  yellow;
+            border-style: solid dashed dotted ;
+            border-radius: 50px 80px 50px 10px;
+            box-shadow: #f00 0 0 50px , #999 0 0 30px inset;
+
+           /* display: inline-block;*/
+            width: 400px;
+            padding: 20px;
+            margin: 20px;
+            background:rgba(250 , 250, 00, .1 ); color: green; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+        p.ca.cb.cc{ background:hsl(360, 70%, 80%);  color: red
+         ;}
         p.cb{ background-color: gray; color: black}
+
+        
     </style>
 </head>
     
 <body>
     <div>
+         <pre>
+            여기
+            그대로
+               표현
+
+         </pre>
          <p id="id1" class="ca cc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
          <a>여기 끼워넣기</a>
          <p id="id2" class="ca cb cc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
