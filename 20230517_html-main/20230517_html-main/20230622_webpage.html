@@ -7,7 +7,8 @@
 <!-- [1] 해상도 - 최적해상도1250px 결정 (최대/최소 마지막점검) -->
 <!-- [2] content 영역 1040px 80vw 90%, 배치(중앙,왼쪽) -->
 <!-- [3] reset.css 폴더경로 -->
-<link href="/resources/css/reset.css" rel="stylesheet">
+<link href="/resources/css/projectname.css" rel="stylesheet">
+<link href="/resources/css/projectname_layout.css" rel="stylesheet">
 <!-- TODO js jQuery -->
 <!-- [4] project명 또는 core.css 폴더경로 - bootstrap, template 등으로 대체 -->
 <!-- [4] 기본색상 10~15개정도 class 미리 만들어두기 -->
@@ -209,6 +210,16 @@ min-width 사용시 작은px 먼저 .. 큰px 작성
     }
     #flex_wrap{
         flex-direction: column;
+    }
+      /* section */
+      section{
+        /* 2. float 배치 */
+        width: 754px; 
+    }
+    /* aside */
+    aside{
+        /* 2. float 배치 */
+        width: 194px; float: right;
     }
 }
 @media (min-width:1000px) {
