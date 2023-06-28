@@ -174,22 +174,79 @@
         console.log(arr1[15]); // undefined
 
         var arr2 = new Array("2", 25, function () { console.log("배열의 함수") }, 55);
-        var arr3 =["2", 25, function () { console.log("배열의 함수") }, 55];
-        
+        var arr3 = ["2", 25, function () { console.log("배열의 함수") }, 55];
+
         arr1 = arr1.concat(arr2, arr3);
         console.log(arr1);
 
-        arr1.push(function(){console.log("함수도 값으로 넣을 수 있음")});
+        arr1.push(function () { console.log("함수도 값으로 넣을 수 있음") });
 
         //java에서 메소드 중요 
         //overloading
-        function sum(a,b){
+        function sum(a, b) {
 
         }
-        function sum(a, b, msg){
-            
+        function sum(a, b, msg) {
+
         }
+
+        console.log("====객체====");
+        var obj2 = new Object();
+        obj2.k1 = 100;
+
+        var obj1 = {
+            k1: 10,
+            k2: "안녕",
+            k3: function () {
+                console.log("obj1의 k3키에 해당하는 함수임.");
+
+            },
+            k4: 20,
+            //더 추가
+            //k5 : 100
+            //k6 : function(){}
+        };
+        obj1.k1 = 1000;
+        obj1["k1"] = 2000;
+        obj1.k3();
+        obj1["k3"]();
+        //obj1.k2(); //obj1.k2 is not a function
+        obj1.k5 = 100;
+        console.log(obj1);
+        obj1.k6 = function () { console.log("obj1의k6에 해당하는 함수임"); };
+        console.log(obj1);
+        //접근한 key= 필드 = 속성 = 멤버변수 명이 기존에 존재하면 값 교체, 기존에 없었다면 추가.
+        console.log(obj1.k10); //undefined
+        //삭제 
+        delete(obj1.k6);
+        delete(obj1["k6"]);
+        console.log(obj1);
+
+        console.log("===함수2=====");
+        function fun2( nickname, title, content) {
+            console.log("안녕");
+            var obj3 = new Object();
+            obj3.k1 = nickname;
+            obj3.k2 = title;
+            obj3.k3 = content;
+            obj3.k4 = function () {
+            console.log("obj3의 함수k2")};
+            return obj3;
+        }
+        console.log(fun2("홍길동", "게시글제목남김","날씨 좋네"));
+        var nana = fun2("나나", "나나나","날씨 좋네");
+        nana.k4();
+
+        console.log("=====배열2=====");
+        var arr1 = [10, 20];
+        arr1[2] = nana; 
+        arr1[3] ={
+            k1: 10,
+            k2: "안녕",
+        };
+        console.log(arr1);//(4) [10, 20, {...}, {...}]
+        var obj4 = {k1: 10, k2:arr1};
+        console.log(obj4); //{k1: 10, k2: Array(4)}
     </script>
 </body>
-
 </html>
