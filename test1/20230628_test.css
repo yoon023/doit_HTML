@@ -1,0 +1,35 @@
+#board ul{
+    list-style: none;
+}
+#board ul li{
+    
+    
+    padding:3px;  
+}
+#board label{
+    display: block;
+    float: left;
+    font-size: 13px;
+    width: 60px;
+    text-align: center;
+     
+}
+
+#board button{
+    display: block;
+    margin-left: 150px;
+}
+#board div{
+    display: block;
+    margin-left: 3px;
+}
+#last{
+    text-align: center;
+    
+}
+#title{
+    width: 300px;
+}
+
+
+

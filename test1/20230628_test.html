@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포토폴리오 문제</title>
+    <link rel="stylesheet" href="/GitHub/doit_HTML/test1/20230628_test.css">
+</head>
+<body>
+    <form id="board">
+        <fieldset>
+            
+            <legend>공지사항 작성하기</legend>
+            <div>
+             <ul>
+                <li>
+                    <label for="bdtitle">제목</label>
+                    <input id="bdtitle" name="title" type="text"  placeholder="제목을 입력하시오." required>
+                </li>
+                <li>
+                    <label for="bdcontents">내용</label>
+                    <input id="bdcontents" name="content" type="text" placeholder="내용을 입력하시오."required>
+                </li>
+                <li>
+                    <label for="bdfile">첨부파일</label>
+                    <form action="insert.no" method="post">
+                        <input multiple type="file" name="uploadfile">
+                    </form>
+                </li>
+             </ul>
+            
+             <button type="submit">작성하기</button>
+            </div>
+        </fieldset>
+    </form>
+    <form id="board2">
+        <fieldset>
+           <table>
+            <thead>
+                <tr bgcolor="orange" style="color: white;">
+                    <th>번호</th>
+                    <th colspan="2">제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                    <th>조회수</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr bgcolor="bisque">
+                    <td>9</td>
+                    <td>공지사항 제목9<td><fieldset><button type="submit">바로가기</button></fieldset></td></td>
+                    <td>user01</td>
+                    <td>2021-03-29</td>
+                    <td>34</td>
+                </tr>
+                <tr bgcolor="bisque">
+                    <td>6</td>
+                    <td>공지사항 제목6<td><fieldset><button type="submit">바로가기</button></fieldset></td></td>
+                    <td>answ445</td>
+                    <td>2021-03-12</td>
+                    <td>67</td>
+                </tr>
+                <tr bgcolor="bisque">
+                    <td>3</td>
+                    <td>공지사항 제목3<td><fieldset><button type="submit">바로가기</button></fieldset></td></td>
+                    <td>testg12</td>
+                    <td>2021-03-01</td>
+                    <td>98</td>
+                </tr>
+                <tr bgcolor="bisque">
+                    <td>2</td>
+                    <td>공지사항 제목2<td><fieldset><button type="submit">바로가기</button></fieldset></td></td>
+                    <td>palwe3</td>
+                    <td>2021-01-02</td>
+                    <td>85</td>
+                </tr>
+                <tr bgcolor="bisque">
+                    <td>1</td>
+                    <td>공지사항 제목1<td><fieldset><button type="submit">바로가기</button></fieldset></td></td>
+                    <td>xml23</td>
+                    <td>2020-12-24</td>
+                    <td>124</td>
+                </tr>
+            </tbody>
+            <tr id="last" bgcolor="orange">
+                <td colspan="6" style="color: white"> 전체공지사항 갯수</td>
+            </tr>
+           </table> 
+        </fieldset>
+
+    </form>
+</body>
+</html>
