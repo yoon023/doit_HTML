@@ -9,7 +9,7 @@
         .signin {
             border: 2px solid #2E9AFE;
             width: 800px;
-            height: 500px;
+            height: 400px;
             background-color: #81F7F3;
             margin: auto;
             display: flex;
@@ -18,15 +18,18 @@
         fieldset {
             border: 2px solid #D8D8D8;
             /* width: 400px; */
-            height: 400px;
+            /* height: 400px; */
             background-color: aliceblue;
             margin: auto;
         }
 
         table {
             margin: auto;
+            vertical-align: middle;
         }
-
+        .addr{
+            padding-bottom: 40px;
+        }
         th {
             text-align: left;
         }
@@ -36,6 +39,7 @@
             border-color: aquamarine;
             width: 380px;
             height: 40px;
+
 
         }
 
@@ -65,31 +69,33 @@
                             <th>패스워드</th>
                             <td><input type="password" name="mpwd" required></td>
                         </tr>
-                            <tr>
-                                <th></th>
-                                <td style="font-size: 3px;">영문자 대/소문자 특수문자, 숫자 포함 8 ~ 32자</td>
-                            </tr>
-                        </div>
-                        <tr>
-                            <th>패스워드 확인</th>
-                            <td><input type="text" name="mpwd2" required></td>
-                        </tr>
-                        <tr>
-                            <th>이메일</th>
-                            <td><input type="text" name="memail"></td>
-                        </tr>
-                        <tr>
-                            <th>주소</th>
-                            <td><input type="text" name="madd"></td>
-                        </tr>
                         <tr>
                             <th></th>
-                            <td><input type="text" name="madd"></td>
+                            <td style="font-size: 3px;">영문자 대/소문자 특수문자, 숫자 포함 8 ~ 32자</td>
                         </tr>
-                    </table>
-                    <button type="submit" class="bt">가입</button>
                 </div>
-            </fieldset>
+                <tr>
+                    <th>패스워드 확인</th>
+                    <td><input type="text" name="mpwd2" required></td>
+                </tr>
+                <tr>
+                    <th>이메일</th>
+                    <td><input type="text" name="memail">@<input type="text" name="memail"></td>
+                </tr>
+                <tr>
+                    <th>주소</th>
+                    <td><input type="text" name="madd"></td>
+                </tr>
+                <tr>
+                    <th class="addr"></th>
+                    <td class="addr"><input type="text" name="madd" ></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit" class="bt">가입</button></td>
+                </tr>
+                </table>
+        </div>
+        </fieldset>
         </div>
     </form>
 </body>
